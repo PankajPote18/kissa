@@ -86,7 +86,7 @@ function HeroBanner({ slides }: { slides: Novel[] }) {
         {slides.map((n, i) => (
           <img
             key={n.id}
-            src={n.cover}
+            src={n.heroCover ?? n.cover}
             alt={`${n.title} cover`}
             width={1280}
             height={720}

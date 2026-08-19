@@ -18,6 +18,11 @@ import coverBalconyWaliGirl from "@/assets/cover-balcony-wali-girl.png";
 import coverMostDangerousNeighbor from "@/assets/cover-most-dangerous-neighbor.png";
 import coverSisterProfessionalMenace from "@/assets/cover-sister-professional-menace.png";
 import coverOperationRemoteControl from "@/assets/cover-operation-remote-control.png";
+import heroWrongCoffeeOrder from "@/assets/hero-wrong-coffee-order.png";
+import heroDreamComeTrue from "@/assets/hero-dream-come-true.png";
+import heroGreatSchoolInspectionDisaster from "@/assets/hero-great-school-inspection-disaster.png";
+import heroOperationRemoteControl from "@/assets/hero-operation-remote-control.png";
+import heroFlat7bVsFlat7c from "@/assets/hero-flat-7b-vs-flat-7c.png";
 
 export type Chapter = {
   title: string;
@@ -32,6 +37,8 @@ export type Novel = {
   genre: string;
   cadence: string;
   cover: string;
+  /** Wide artwork for the hero banner. Falls back to `cover` when absent. */
+  heroCover?: string;
   synopsis: string;
   views: string;
   chapters: Chapter[];
@@ -3698,6 +3705,15 @@ const coverOverrides: Record<string, string> = {
   "Operation: Remote Control": coverOperationRemoteControl,
 };
 
+// Wide artwork used only by the home page hero banner.
+const heroCoverOverrides: Record<string, string> = {
+  "The Wrong Coffee Order": heroWrongCoffeeOrder,
+  "Dream Come True": heroDreamComeTrue,
+  "The Great School Inspection Disaster": heroGreatSchoolInspectionDisaster,
+  "Operation: Remote Control": heroOperationRemoteControl,
+  "Flat 7B vs Flat 7C": heroFlat7bVsFlat7c,
+};
+
 const generatedNovels: Novel[] = titleSeeds.map((seed, i) => ({
   id: slugify(seed.title),
   title: seed.title,
@@ -3705,6 +3721,7 @@ const generatedNovels: Novel[] = titleSeeds.map((seed, i) => ({
   genre: seed.genre,
   cadence: seed.cadence,
   cover: coverOverrides[seed.title] ?? placeholderCover(seed.title, i),
+  ...(heroCoverOverrides[seed.title] ? { heroCover: heroCoverOverrides[seed.title] } : {}),
   views: seed.views,
   synopsis: seed.tagline,
   chapters: chapterOverrides[seed.title] ?? [placeholderChapter(`Chapter 1 — ${seed.title}`, seed.tagline)],
