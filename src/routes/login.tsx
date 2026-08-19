@@ -6,10 +6,10 @@ import { useAuth } from "@/lib/auth";
 export const Route = createFileRoute("/login")({
   head: () => ({
     meta: [
-      { title: "Sign in — Kissa Novels" },
-      { name: "description", content: "Sign in with your mobile number and OTP to keep reading on Kissa." },
-      { property: "og:title", content: "Sign in — Kissa Novels" },
-      { property: "og:description", content: "Sign in with your mobile number and OTP to keep reading on Kissa." },
+      { title: "Sign in — Clickbuz Novels" },
+      { name: "description", content: "Sign in with your mobile number and OTP to keep reading on Clickbuz." },
+      { property: "og:title", content: "Sign in — Clickbuz Novels" },
+      { property: "og:description", content: "Sign in with your mobile number and OTP to keep reading on Clickbuz." },
     ],
   }),
   component: LoginPage,
@@ -52,7 +52,7 @@ function LoginPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 flex items-center gap-3 text-primary">
           <BookOpenText className="size-8" />
-          <span className="font-display text-3xl tracking-[0.2em] text-foreground">KISSA</span>
+          <span className="font-display text-3xl tracking-[0.2em] text-foreground">CLICKBUZ</span>
         </div>
         <h1 className="text-4xl">
           {step === "phone" ? "Start reading" : "Verify OTP"}
@@ -118,12 +118,6 @@ function LoginPage() {
             </button>
           </form>
         )}
-
-        <div className="mt-10 rounded-xl border border-border bg-surface p-4 text-xs text-muted-foreground">
-          <p className="font-semibold uppercase tracking-widest text-gold">Demo accounts</p>
-          <p className="mt-2">9999999999 · OTP 1234 — opens Home</p>
-          <p>8888888888 · OTP 5678 — opens Explore Plans</p>
-        </div>
       </div>
     </main>
   );

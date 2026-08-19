@@ -1,4 +1,4 @@
-# Kissa
+# Clickbuz
 
 Read original romance, historical, and thriller novels, chapter by chapter.
 

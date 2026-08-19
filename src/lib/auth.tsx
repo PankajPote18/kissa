@@ -18,7 +18,7 @@ const ACCOUNTS: Record<string, { otp: string; user: DemoUser }> = {
   },
 };
 
-const STORAGE_KEY = "kissa-demo-user";
+const STORAGE_KEY = "clickbuz-demo-user";
 
 type AuthValue = {
   user: DemoUser | null;

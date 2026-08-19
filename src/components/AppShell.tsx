@@ -32,9 +32,9 @@ export function AppShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-20 flex-col items-center border-r border-border bg-sidebar py-6 md:flex">
-        <Link to="/" className="flex items-center justify-center px-2 text-primary" title="Kissa">
+        <Link to="/" className="flex items-center justify-center px-2 text-primary" title="Clickbuz">
           <BookOpenText className="size-7 shrink-0" />
-          <span className="sr-only">Kissa</span>
+          <span className="sr-only">Clickbuz</span>
         </Link>
         <nav className="flex w-full flex-1 flex-col items-center justify-center gap-2">
           {nav.map((item) => (

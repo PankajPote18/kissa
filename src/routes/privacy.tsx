@@ -4,10 +4,10 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Kissa Novels" },
-      { name: "description", content: "What Kissa stores about your reading session and how that information is used." },
-      { property: "og:title", content: "Privacy Policy — Kissa Novels" },
-      { property: "og:description", content: "What Kissa stores about your reading session and how that information is used." },
+      { title: "Privacy Policy — Clickbuz Novels" },
+      { name: "description", content: "What Clickbuz stores about your reading session and how that information is used." },
+      { property: "og:title", content: "Privacy Policy — Clickbuz Novels" },
+      { property: "og:description", content: "What Clickbuz stores about your reading session and how that information is used." },
     ],
   }),
   component: () => (
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/privacy")({
         },
         {
           heading: "Contact",
-          body: "For any privacy request, write to support@kissa.example and we will respond within seven working days.",
+          body: "For any privacy request, write to support@clickbuz.example and we will respond within seven working days.",
         },
       ]}
     />

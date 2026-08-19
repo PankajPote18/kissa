@@ -4,20 +4,20 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/disclaimer")({
   head: () => ({
     meta: [
-      { title: "Disclaimer — Kissa Novels" },
-      { name: "description", content: "How to treat the fiction, characters and demo content published on Kissa." },
-      { property: "og:title", content: "Disclaimer — Kissa Novels" },
-      { property: "og:description", content: "How to treat the fiction, characters and demo content published on Kissa." },
+      { title: "Disclaimer — Clickbuz Novels" },
+      { name: "description", content: "How to treat the fiction, characters and demo content published on Clickbuz." },
+      { property: "og:title", content: "Disclaimer — Clickbuz Novels" },
+      { property: "og:description", content: "How to treat the fiction, characters and demo content published on Clickbuz." },
     ],
   }),
   component: () => (
     <LegalPage
       title="Disclaimer"
-      subtitle="Please read this before you continue reading on Kissa."
+      subtitle="Please read this before you continue reading on Clickbuz."
       sections={[
         {
           heading: "Works of fiction",
-          body: "Every story published on Kissa is a work of fiction. Names, characters, places, businesses and incidents are products of the author's imagination. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.",
+          body: "Every story published on Clickbuz is a work of fiction. Names, characters, places, businesses and incidents are products of the author's imagination. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.",
         },
         {
           heading: "Mature themes",

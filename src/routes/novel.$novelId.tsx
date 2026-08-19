@@ -11,14 +11,14 @@ export const Route = createFileRoute("/novel/$novelId")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Novel unavailable — Kissa" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Novel unavailable — Clickbuz" }, { name: "robots", content: "noindex" }] };
     }
     const { novel } = loaderData;
     return {
       meta: [
-        { title: `${novel.title} — Read on Kissa` },
+        { title: `${novel.title} — Read on Clickbuz` },
         { name: "description", content: novel.synopsis.slice(0, 155) },
-        { property: "og:title", content: `${novel.title} — Read on Kissa` },
+        { property: "og:title", content: `${novel.title} — Read on Clickbuz` },
         { property: "og:description", content: novel.synopsis.slice(0, 155) },
       ],
     };

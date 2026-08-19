@@ -74,12 +74,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kissa — Read Original Novels" },
+      { title: "Clickbuz — Read Original Novels" },
       {
         name: "description",
         content: "Binge original romance, historical and thriller novels, chapter by chapter.",
       },
-      { property: "og:title", content: "Kissa — Read Original Novels" },
+      { property: "og:title", content: "Clickbuz — Read Original Novels" },
       {
         property: "og:description",
         content: "Binge original romance, historical and thriller novels, chapter by chapter.",

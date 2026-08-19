@@ -14,15 +14,15 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kissa — Binge Original Novels Daily" },
+      { title: "Clickbuz — Binge Original Novels Daily" },
       {
         name: "description",
-        content: "Romance, history and thrillers updated chapter by chapter. Start reading free on Kissa.",
+        content: "Romance, history and thrillers updated chapter by chapter. Start reading free on Clickbuz.",
       },
-      { property: "og:title", content: "Kissa — Binge Original Novels Daily" },
+      { property: "og:title", content: "Clickbuz — Binge Original Novels Daily" },
       {
         property: "og:description",
-        content: "Romance, history and thrillers updated chapter by chapter. Start reading free on Kissa.",
+        content: "Romance, history and thrillers updated chapter by chapter. Start reading free on Clickbuz.",
       },
     ],
   }),

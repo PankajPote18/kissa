@@ -5,10 +5,10 @@ import { AppShell, PageHeader } from "@/components/AppShell";
 export const Route = createFileRoute("/plans")({
   head: () => ({
     meta: [
-      { title: "Explore Plans — Kissa Novels" },
-      { name: "description", content: "Weekly, monthly and yearly reading plans with unlimited chapters on Kissa." },
-      { property: "og:title", content: "Explore Plans — Kissa Novels" },
-      { property: "og:description", content: "Weekly, monthly and yearly reading plans with unlimited chapters on Kissa." },
+      { title: "Explore Plans — Clickbuz Novels" },
+      { name: "description", content: "Weekly, monthly and yearly reading plans with unlimited chapters on Clickbuz." },
+      { property: "og:title", content: "Explore Plans — Clickbuz Novels" },
+      { property: "og:description", content: "Weekly, monthly and yearly reading plans with unlimited chapters on Clickbuz." },
     ],
   }),
   component: Plans,

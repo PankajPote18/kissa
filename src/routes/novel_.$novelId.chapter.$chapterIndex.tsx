@@ -12,15 +12,15 @@ export const Route = createFileRoute("/novel_/$novelId/chapter/$chapterIndex")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Chapter unavailable — Kissa" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Chapter unavailable — Clickbuz" }, { name: "robots", content: "noindex" }] };
     }
     const title = `${loaderData.chapter.title} — ${loaderData.novel.title}`;
     return {
       meta: [
         { title },
-        { name: "description", content: `Read ${loaderData.chapter.title} of ${loaderData.novel.title} on Kissa.` },
+        { name: "description", content: `Read ${loaderData.chapter.title} of ${loaderData.novel.title} on Clickbuz.` },
         { property: "og:title", content: title },
-        { property: "og:description", content: `Read ${loaderData.chapter.title} of ${loaderData.novel.title} on Kissa.` },
+        { property: "og:description", content: `Read ${loaderData.chapter.title} of ${loaderData.novel.title} on Clickbuz.` },
       ],
     };
   },

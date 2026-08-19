@@ -6,10 +6,10 @@ import { useAuth } from "@/lib/auth";
 export const Route = createFileRoute("/profile")({
   head: () => ({
     meta: [
-      { title: "My Profile — Kissa Novels" },
-      { name: "description", content: "Manage your Kissa plan, read the policies and sign out of your account." },
-      { property: "og:title", content: "My Profile — Kissa Novels" },
-      { property: "og:description", content: "Manage your Kissa plan, read the policies and sign out of your account." },
+      { title: "My Profile — Clickbuz Novels" },
+      { name: "description", content: "Manage your Clickbuz plan, read the policies and sign out of your account." },
+      { property: "og:title", content: "My Profile — Clickbuz Novels" },
+      { property: "og:description", content: "Manage your Clickbuz plan, read the policies and sign out of your account." },
     ],
   }),
   component: Profile,

@@ -4,16 +4,16 @@ import { LegalPage } from "@/components/LegalPage";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms and Conditions — Kissa Novels" },
-      { name: "description", content: "The rules for using Kissa, its subscriptions and its published stories." },
-      { property: "og:title", content: "Terms and Conditions — Kissa Novels" },
-      { property: "og:description", content: "The rules for using Kissa, its subscriptions and its published stories." },
+      { title: "Terms and Conditions — Clickbuz Novels" },
+      { name: "description", content: "The rules for using Clickbuz, its subscriptions and its published stories." },
+      { property: "og:title", content: "Terms and Conditions — Clickbuz Novels" },
+      { property: "og:description", content: "The rules for using Clickbuz, its subscriptions and its published stories." },
     ],
   }),
   component: () => (
     <LegalPage
       title="Terms & Conditions"
-      subtitle="By reading on Kissa you agree to the terms below."
+      subtitle="By reading on Clickbuz you agree to the terms below."
       sections={[
         {
           heading: "Your account",
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/terms")({
         },
         {
           heading: "Content licence",
-          body: "All stories, cover artwork and chapter text remain the property of Kissa and its authors. You may read them for personal use but may not copy, republish, translate or distribute them without written permission.",
+          body: "All stories, cover artwork and chapter text remain the property of Clickbuz and its authors. You may read them for personal use but may not copy, republish, translate or distribute them without written permission.",
         },
         {
           heading: "Subscriptions",
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/terms")({
         },
         {
           heading: "Changes to these terms",
-          body: "We may update these terms as the platform grows. Continued use of Kissa after an update means you accept the revised terms.",
+          body: "We may update these terms as the platform grows. Continued use of Clickbuz after an update means you accept the revised terms.",
         },
       ]}
     />
